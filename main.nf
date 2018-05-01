@@ -11,7 +11,7 @@ process get {
 
     script:       
     """
-    cd /home/ubuntu && echo $IRODS_USER_NAME > file
+    cd /home/ubuntu && . sample-icommands.env && echo $IRODS_USER_NAME > file
     """
 }
 
