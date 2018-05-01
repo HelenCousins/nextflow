@@ -1,4 +1,4 @@
-!/usr/bin/env nextflow
+#!/usr/bin/env nextflow
 
 thing = Channel.from( 'page1', 'page2' )
 
