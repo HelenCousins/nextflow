@@ -11,7 +11,7 @@ process get {
 
     script:       
     """
-    cd /home/ubuntu && ls > file
+    cd /home/ubuntu && echo $IRODS_USER_NAME > file
     """
 }
 
