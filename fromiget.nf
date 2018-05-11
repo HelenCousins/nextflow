@@ -15,7 +15,7 @@ process get {
 
     script:
     """
-    /docker-entrypoint.sh
+    myiinit.sh
     iget "${a}_1.fastq"
     iget "${a}_2.fastq"
     """

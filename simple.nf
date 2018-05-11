@@ -12,7 +12,7 @@ process get {
     script:
     """
     cd /home/ubuntu
-    /docker-entrypoint.sh
+    myiinit.sh
     ils > listme
     iget $thing
     """

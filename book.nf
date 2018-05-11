@@ -18,7 +18,7 @@ process get {
 
    script:
     """
-    /docker-entrypoint.sh
+    myiinit.sh
     iget $a -f
     """
 }
