@@ -3,7 +3,7 @@
 thing = Channel.from( 'page1', 'page2' )
 
 process get {
-    container = 'hc7docker/test'
+    container = 'hc7docker/nextflowirods'
 
 
     input:
@@ -12,7 +12,6 @@ process get {
     script:
     """
     cd /home/ubuntu
-    myiinit.sh
     ils > listme
     iget $thing
     """

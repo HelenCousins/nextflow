@@ -4,7 +4,7 @@ params.list = '/home/list'
 myFile = file(params.list)
 allLines  = myFile.readLines()
 process get {
-    container = 'hc7docker/test'
+    container = 'hc7docker/nextflowirods'
 
 
     input:
@@ -15,7 +15,6 @@ process get {
 
     script:
     """
-    myiinit.sh
     iget "${a}_1.fastq"
     iget "${a}_2.fastq"
     """
